@@ -1,0 +1,82 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<!-- This xml file was automatically generated with the creation of the 
+		project according to the JPA specification. -->
+
+
+	<persistence-unit name="transactions-optional">
+		<description>JPA Persistence</description>
+
+		<class>com.example.model.JobTitle</class>
+		<class>com.example.model.UserLogin</class>
+		<class>com.example.model.Project</class>
+		<class>com.example.model.Scenario</class>
+		<class>com.example.model.SharedProject</class>
+		<class>com.example.model.Cocomo</class>
+		<class>com.example.model.CostForImplementing</class>
+		<class>com.example.model.TDinBuying</class>
+		<class>com.example.model.SharedBuying</class>
+		<class>com.example.model.SharedCocomo</class>
+		<class>com.example.model.SharedImplementing</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.google.appengine.api.rdbms.AppEngineDriver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:google:rdbms://localhost/tdq" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+
+			<!-- You may want to change this to false in production -->
+			<property name="hibernate.show_sql" value="false" />
+
+			<!-- You can change this to create at the first time -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+			<!-- Set this to 0 otherwise you sometimes get errors -->
+			<property name="hibernate.connection.pool_size" value="0" />
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+		</properties>
+	</persistence-unit>
+
+	<!-- Persistence unit for the JUnit testing. It contains the properties 
+		to connect to a local MySQL testing database. -->
+	<persistence-unit name="testing">
+		<description>JPA testing Persistence</description>
+
+		<class>com.example.model.JobTitle</class>
+		<class>com.example.model.UserLogin</class>
+		<class>com.example.model.Project</class>
+		<class>com.example.model.Scenario</class>
+		<class>com.example.model.SharedProject</class>
+		<class>com.example.model.Cocomo</class>
+		<class>com.example.model.CostForImplementing</class>
+		<class>com.example.model.TDinBuying</class>
+		<class>com.example.model.SharedBuying</class>
+		<class>com.example.model.SharedCocomo</class>
+		<class>com.example.model.SharedImplementing</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tdq" />
+			<property name="javax.persistence.jdbc.user" value="test" />
+			<property name="javax.persistence.jdbc.password" value="george" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+
+			<!-- You may want to change this to false in production -->
+			<property name="hibernate.show_sql" value="false" />
+
+			<!-- You can change this to create at the first time -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+			<!-- Set this to 0 otherwise you sometimes get errors -->
+			<property name="hibernate.connection.pool_size" value="0" />
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+		</properties>
+	</persistence-unit>
+</persistence>

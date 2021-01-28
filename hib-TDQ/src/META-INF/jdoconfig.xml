@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdoconfig xmlns="http://java.sun.com/xml/ns/jdo/jdoconfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:SchemaLocation="http://java.sun.com/xml/ns/jdo/jdoconfig http://java.sun.com/xml/ns/jdo/jdoconfig_3_0.xsd">
+
+	<!-- This xml file was automatically generated due to the fact that the 
+		Google App Engine plugin was installed. Google (2013), "Using JDO 2.3 with 
+		App Engine", https://developers.google.com/appengine/docs/java/datastore/jdo/overview 
+		[accessed 18 Jul 2013] -->
+
+	<persistence-manager-factory name="transactions-optional">
+		<property name="javax.jdo.PersistenceManagerFactoryClass"
+			value="org.datanucleus.api.jdo.JDOPersistenceManagerFactory" />
+		<property name="javax.jdo.option.ConnectionURL" value="appengine" />
+		<property name="javax.jdo.option.NontransactionalRead" value="true" />
+		<property name="javax.jdo.option.NontransactionalWrite"
+			value="true" />
+		<property name="javax.jdo.option.RetainValues" value="true" />
+		<property name="datanucleus.appengine.autoCreateDatastoreTxns"
+			value="true" />
+		<property name="datanucleus.appengine.singletonPMFForName"
+			value="true" />
+	</persistence-manager-factory>
+</jdoconfig>

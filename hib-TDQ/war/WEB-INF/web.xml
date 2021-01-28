@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 
+	2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"> -->
+
+<!-- This xml file was automatically generated due to the fact that the Google App Engine plugin was installed.
+	 Google (2013), "Using the Google Plugin for Eclipse", https://developers.google.com/appengine/docs/java/tools/eclipse
+	 [accessed 19 Jul 2013] -->
+
+<!-- This xml file maps the servlets to the corresponding URLs.
+
+	 Parts of the source code were added and adapted by Georgios Skourletopoulos.
+
+	 Last modified 18 August 2013. -->
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<!-- <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5"> -->
+	
+	
+	<!-- The below source code was added and adapted by Georgios Skourletopoulos.
+
+	 Last modified 18 August 2013. -->
+	
+	
+	<servlet>
+		<servlet-name>HibTDQ</servlet-name>
+		<servlet-class>com.example.hibtdq.HibTDQServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HibTDQ</servlet-name>
+		<url-pattern>/hibtdq</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>profileServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>profileServlet</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>projectServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>projectServlet</servlet-name>
+		<url-pattern>/project</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>mainPMServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.MainPMServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainPMServlet</servlet-name>
+		<url-pattern>/mainPM</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>showProjectServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ShowProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>showProjectServlet</servlet-name>
+		<url-pattern>/showProject</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>scenariosServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ScenariosServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>scenariosServlet</servlet-name>
+		<url-pattern>/scenarios</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>shareServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ShareProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>shareServlet</servlet-name>
+		<url-pattern>/share</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>mainDevServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.MainDevServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainDevServlet</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>newCocomoServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.NewCocomoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>newCocomoServlet</servlet-name>
+		<url-pattern>/cocomoNew</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>newImplementServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.NewImplementingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>newImplementServlet</servlet-name>
+		<url-pattern>/implementNew</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>newBuyingServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.NewBuyingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>newBuyingServlet</servlet-name>
+		<url-pattern>/buyNew</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>cocomoServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.CocomoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cocomoServlet</servlet-name>
+		<url-pattern>/cocomo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>implementServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ImplementingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>implementServlet</servlet-name>
+		<url-pattern>/implement</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>buyServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.BuyingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>buyServlet</servlet-name>
+		<url-pattern>/buy</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>shareEstimationServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ShareEstimationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>shareEstimationServlet</servlet-name>
+		<url-pattern>/shareEstimate</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>authenticationServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.AuthenticationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>authenticationServlet</servlet-name>
+		<url-pattern>/authentication</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>reportsServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ReportsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reportsServlet</servlet-name>
+		<url-pattern>/reports</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>graphServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.GraphServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>graphServlet</servlet-name>
+		<url-pattern>/graph</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>errorServlet</servlet-name>
+		<servlet-class>com.example.hibtdq.ErrorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>errorServlet</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>400</error-code>
+		<location>/error</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error</location>
+	</error-page>
+	<welcome-file-list>
+		<welcome-file>HibTDQ</welcome-file>
+	</welcome-file-list>
+</web-app>
